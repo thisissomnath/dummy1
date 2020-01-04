@@ -5,27 +5,22 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 16px;
   overflow: hidden;
-  background-color: #333;
+  background-color: yellow;
 }
 
-li{
-	float:left;
-}
 
 .dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
-	cursor: pointer;
+  border: solid 1px black;
 }
 
 
-.dropdown-content 
+.dropdown-content  
 {
   border:solid 1px black;
   display: none;
@@ -42,6 +37,7 @@ li{
 }
 
 .dropdown-content a:hover {
+		color:blue;
 		background-color: #f1f1f1
 		}
 
@@ -53,13 +49,15 @@ li{
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+
 </style>
 </head>
 <body>
 
 <ul>
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+<div class="dropdown" style="float:left">
+  <li><button class="dropbtn">button1</button></li>
   <div class="dropdown-content">
   <a href="#">Link 1</a>
   <a href="#">Link 2</a>
@@ -68,14 +66,13 @@ li{
 </div>
 
 <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <li><button class="dropbtn">button2</button></li>
   <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
+  <a href="#">Link 11</a>
+  <a href="#">Link 21</a>
+  <a href="#">Link 32</a>
   </div>
 </div>
-
 <ul>
 
 </body>
