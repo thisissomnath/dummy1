@@ -1,0 +1,27 @@
+body {
+  background-color: powderblue;
+}
+h2 {
+  color: blue;
+  font-family:verdana;
+  font-size:200%;
+}
+p {
+  color: black;
+  font-family:rural;
+  font-size:150%;
+  border:2px solid black;
+  padding: 30px;
+}
+
+li{ 
+	color:green;
+	font-size:200%;
+}
+
+b{
+	color:green;
+}
+i{
+	color:red;
+}
