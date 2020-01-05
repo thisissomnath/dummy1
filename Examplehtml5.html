@@ -3,20 +3,37 @@
 <meta charset="utf-8">
 <title> HTML5</title>
 <style>
+*{
+	box-sizing:border-box;
+	heigth:auto;
+}
+
 body {
   font-family: Verdana;
   font-size: 10;
 }
-header,footer {
+
+header {
 		border:solid 1px black;
-		height :auto;
-		paddding:20px;
+		paddding:10px;
 		color:White;
 		background-color:black;
 		font-size:10;
 		text-align:center;
 		text-decoration:none;
+}
 
+footer{
+		border:solid 1px black;
+		color:White;
+		background-color:black;
+		font-size:10;
+		text-align:center;
+		text-decoration:none;
+		bottom:0;
+		position:fixed;
+		width:100%;
+		left:0;
 }
 
 nav ul{
@@ -34,22 +51,10 @@ nav ul li{
 		
 }
 
-section {
-  margin: 5px;
-  padding: 10px;
-  background-color: #f1f1f1;
-}
-
-article {
-  margin: 5px;
-  padding: 10px;
-  background-color: white;
-}
 
 nav{
 	background-color:#f1f1f1;
 	width:50%;
-	height:auto;
 	display:inline;
 
 
@@ -59,14 +64,19 @@ nav{
   float: left;
   width: 50%;
   padding: 10px;
-  height: auto;
+  heigth:auto;
+  
   border:solid 1px black;
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+  heigth:auto;
+
 }
+
+
 
 </style>
 </head>
@@ -86,25 +96,34 @@ nav{
 	</ul>
 </nav>
 
-<section>
-<h2> News Section</h2>
+<h2><center> News Section</center></h2>
 		<div class="row">
-			<article>
-					<h2>Live news</h2>
 						<div class="column" style="background-color:#aaa;">
-							<h2>Column 1</h2>
-							<p>Some text..</p>
+							<h2>Live news</h2>
+							
+							<p style="color:red;"><marquee behavior="scroll" direction="left"> Demo Video</marquee></p>
+
+							
+								<video width="400" controls>
+								  <source src="mov_bbb.mp4" type="video/mp4">
+								  <source src="mov_bbb.ogg" type="video/ogg">
+								  Your browser does not support HTML5 video.
+								</video>
+							
+							
 						</div>
-			</article>
-			<article>
-					<h2> Upcomming News</h2>
-						<div class="column" style="background-color:#aaa;">
-							<h2>Column 1</h2>
-							<p>Some text..</p>
+			
+			
+					
+						<div class="column"  style="background-color:#aaa;">
+							<h2> Upcomming News</h2>
+							<p style="color:red;"><marquee behavior="scroll" direction="right"> YouTube Video</marquee></p>
+							<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+							</iframe>
 						</div>
-			</article>
+			
 			</div>		
-</section>
+
 
 <footer>
   <p>&copy; 2014 Monday Times. All rights reserved.</p>
