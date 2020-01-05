@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title> HTML5</title>
+<style>
+body {
+  font-family: Verdana;
+  font-size: 10;
+}
+header,footer {
+		border:solid 1px black;
+		height :auto;
+		paddding:20px;
+		color:White;
+		background-color:black;
+		font-size:10;
+		text-align:center;
+		text-decoration:none;
+
+}
+
+nav ul{
+	padding:0;
+	text-decoration:none;
+}
+
+nav ul li{
+		border:solid 1px black;
+		display:inline;
+		margine:5px;
+		padding:10px;
+		text-decoration: none;
+		background-color:#ccc;
+		
+}
+
+section {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+article {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+nav{
+	background-color:#f1f1f1;
+	width:50%;
+	height:auto;
+	display:inline;
+
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  border:solid 1px black;
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+	<header>
+		<h2> India Times</h2>
+	</header>
+<nav>
+	<ul>
+		<li><a href="#Home"> Home</a></li>
+		<li><a href="#World">world</a></li>
+		<li><a href="#Politics">politics</a></li>
+		<li><a href="#Economics">Economics</a></li>
+		<li><a href="#Business">Business</a></li>
+		<li><a href="#Culture">Culture</a></li>
+	</ul>
+</nav>
+
+<section>
+<h2> News Section</h2>
+		<div class="row">
+			<article>
+					<h2>Live news</h2>
+						<div class="column" style="background-color:#aaa;">
+							<h2>Column 1</h2>
+							<p>Some text..</p>
+						</div>
+			</article>
+			<article>
+					<h2> Upcomming News</h2>
+						<div class="column" style="background-color:#aaa;">
+							<h2>Column 1</h2>
+							<p>Some text..</p>
+						</div>
+			</article>
+			</div>		
+</section>
+
+<footer>
+  <p>&copy; 2014 Monday Times. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
