@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title> HTML5</title>
+<style>
+*{
+	box-sizing:border-box;
+	heigth:auto;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 10;
+}
+
+header {
+		border:solid 1px black;
+		paddding:10px;
+		color:White;
+		background-color:black;
+		font-size:10;
+		text-align:center;
+		text-decoration:none;
+}
+
+footer{
+		border:solid 1px black;
+		color:White;
+		background-color:black;
+		font-size:10;
+		text-align:center;
+		text-decoration:none;
+		bottom:0;
+		position:fixed;
+		width:100%;
+		left:0;
+}
+
+nav ul{
+	padding:0;
+	text-decoration:none;
+}
+
+nav ul li{
+		border:solid 1px black;
+		display:inline;
+		margine:5px;
+		padding:10px;
+		text-decoration: none;
+		background-color:#ccc;
+		
+}
+
+
+nav{
+	background-color:#f1f1f1;
+	width:50%;
+	display:inline;
+
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  heigth:auto;
+  
+  border:solid 1px black;
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  heigth:auto;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+	<header>
+		<h2> India Times</h2>
+	</header>
+<nav>
+	<ul>
+		<li><a href="#Home"> Home</a></li>
+		<li><a href="#World">world</a></li>
+		<li><a href="#Politics">politics</a></li>
+		<li><a href="#Economics">Economics</a></li>
+		<li><a href="#Business">Business</a></li>
+		<li><a href="#Culture">Culture</a></li>
+	</ul>
+</nav>
+
+<h2><center> News Section</center></h2>
+		<div class="row">
+						<div class="column" style="background-color:#aaa;">
+							<h2>Live news</h2>
+							
+							<p style="color:red;"><marquee behavior="scroll" direction="left"> Demo Video</marquee></p>
+
+							
+								<video width="400" controls>
+								  <source src="mov_bbb.mp4" type="video/mp4">
+								  <source src="mov_bbb.ogg" type="video/ogg">
+								  Your browser does not support HTML5 video.
+								</video>
+							
+							
+						</div>
+			
+			
+					
+						<div class="column" 	 style="background-color:#aaa;">
+							<h2> Upcomming News</h2>
+							<p style="color:red;"><marquee behavior="scroll" direction="right"> YouTube Video</marquee></p>
+							<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+							</iframe>
+						</div>
+			
+			</div>		
+
+
+<footer>
+  <p>&copy; 2014 Monday Times. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

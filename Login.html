@@ -7,18 +7,19 @@
 <body>
 
 	<div class="login-box">
-		 <i class="fa fa-user-circle" aria-hidden="true" style="font-size:600%"></i>
-		<form><br><br><br><br><br><br><br><br>
-		<h2><span><center> Login Form</center></span></h2>
+		<div class="fa fa-user-circle" aria-hidden="true" style="font-size:600%; left:40%; size:50%; top:10px; position:relative;">	
+		</div>
+		<form>
+		<h2><span><center>Login Form</center></span></h2>
 		<div class="textbox">
-			<input type="textbox" name="username" placeholder="Username" value="" width="80%" height="50px" style="text-align:center; color:black; border-radius:50px; width:80%; height:50px;">
-			<i class="fa fa-user" aria-hidden="true"></i>
-
+		 <i class="fa fa-user icon"></i>
+			<input class="input1" type="textbox" name="username" placeholder="Username" value="" maxlength="20" required />
 			</div>
 		<div class="textbox">
-			<input type="Password" name="password" placeholder="Password" value="" style="text-align:center; color:black; border-radius:50px; width:80%; height:50px;">
+		<i class="fa fa-key icon"></i>
+			<input class="input1" type="Password" name="password" placeholder="Password" value="" maxlength="10" required>
 		</div>
-		<input class="btn" type="button" name="" value="sign-in">
+		<input class="btn" type="button" name="" value="sign-in"/>
 		<p><a href="#">Forgot your Password?</a>
 			<a href="#">About</a></p>
 		</form>
