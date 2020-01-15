@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<body>
+<form  action="/action_page.php"  method="GET" target="_blank">
+<fieldset>
+<legend>Personal Information</legend>
+	Enter your First Name:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="first" maxlength="50" placeholder="First Name" required>
+	&nbsp;&nbsp;Enter your Middle Name:
+	&nbsp;&nbsp;<input type="text" name="middle" maxlength="50"  placeholder="Middle Name">
+	Enter your Last Name:
+	<input type="text" name="last" maxlength="50"  placeholder="Last Name" required ><br><br>
+	Enter your Email Address:
+	<input type="email" name="email" maxlength="20" placeholder="Enter your Email" required >
+	&nbsp;&nbsp;Enter your Number:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="quantity" min="3" max="30" placeholder="enter your number">
+	<!--<input type="submit" onclick="alert('submit your numbers!!!')" value="submit">-->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Telephone:
+	<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter your telephone number"><br><br>
+	
+	Select another number:
+	 &nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="points" step="3" max="30">
+	 <input type="submit"><br><br>
+	<label>Select your gender:</label>
+	<input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other  &nbsp;&nbsp;&nbsp;
+  <label> Select your date of birht:</label>
+  <input type="date"name="date"><br><br>
+  
+	
+	<label> Select your State:</label>
+	<select name="state">
+	
+    <option value="maharashtra">maharashtra</option>
+    <option value="goa">Goa</option>
+    <option value="hriyana">Hriyana</option>
+    <option value="gujrat">Gujarat</option>
+  </select>&nbsp; &nbsp;
+  
+  <label> Select your destrict:</label>
+  <input list="district" name="district">
+  <datalist id="district">
+    <option value="pune">
+    <option value="Raigad">
+    <option value="thane">
+    <option value="solapur">
+    <option value="kolhapur">
+	<option value="satara">
+    <option value="sindhudurg">
+    <option value="sangli">	
+  </datalist>
+  <input type="button" onclick="alert('Comfirm to submit Information!!')" value="submit"><br><br>
+
+  
+  
+  <label><b>Enter Your Additional Information:</b></label><br>
+  <textarea name="message" rows="10" cols="30">
+	Enter your additional Information
+	</textarea>&nbsp;&nbsp;
+		<input type="button" onclick="alert('submit Information!!')" value="submit">&nbsp;&nbsp;
+		<input type="reset" onclick="alert('reset Information!!')" value="reset">&nbsp;&nbsp;
+		<input type="submit" value="cancle">
+		
+</fieldset>		
+</form>
+</body>
+</head>
